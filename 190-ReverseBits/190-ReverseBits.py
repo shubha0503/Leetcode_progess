@@ -1,0 +1,11 @@
+# Last updated: 7/4/2026, 10:44:32 AM
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        result = 0
+        
+        for _ in range(32):
+            result <<= 1          # shift result left
+            result |= (n & 1)     # add last bit of n
+            n >>= 1               # shift n right
+        
+        return result
