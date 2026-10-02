@@ -1,4 +1,4 @@
-# Last updated: 10/2/2026, 10:49:34 PM
+# Last updated: 10/2/2026, 10:57:46 PM
 1class Solution:
 2    def generateParenthesis(self, n: int) -> List[str]:
 3        def dfs(l: int, r: int, t: str):
