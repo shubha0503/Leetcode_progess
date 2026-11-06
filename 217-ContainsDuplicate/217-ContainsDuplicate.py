@@ -1,8 +1,8 @@
-# Last updated: 8/2/2026, 11:25:35 AM
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        nums_set = set(nums)
-        if len(nums_set) == len(nums):
-            return False
-        else:
-            return True
+# Last updated: 11/6/2026, 10:38:00 PM
+1class Solution:
+2    def containsDuplicate(self, nums: List[int]) -> bool:
+3        seen = set(nums)
+4        if len(seen) == len(nums):
+5            return False
+6        else:
+7            return True
