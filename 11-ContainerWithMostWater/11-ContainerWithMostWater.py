@@ -1,18 +1,19 @@
-# Last updated: 7/4/2026, 10:46:03 AM
-class Solution:
-    def maxArea(self, height):
-        left = 0
-        right = len(height) - 1
-        max_water = 0
-        
-        while left < right:
-            h = min(height[left], height[right])
-            w = right - left
-            max_water = max(max_water, h * w)
-            
-            if height[left] < height[right]:
-                left += 1
-            else:
-                right -= 1
-        
-        return max_water
+# Last updated: 11/16/2026, 10:00:53 PM
+1class Solution:
+2    def maxArea(self, height: list[int]) -> int:
+3        left = 0
+4        maxi = 0
+5        right = len(height) - 1
+6        while left < right:
+7            width = right - left
+8            area = width * min(height[left],height[right])
+9            maxi = max(area,maxi)
+10            if height[left] < height[right]:
+11                left += 1
+12            else:
+13                right -= 1
+14        return maxi
+15
+16
+17    
+18        
